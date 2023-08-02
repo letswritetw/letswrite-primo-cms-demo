@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="generator" content="Primo" />
+    <!-- HEAD_svelte-du3lun_START -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+
+        #page {
+            font-family: system-ui, sans-serif;
+            color: var(--color);
+            line-height: 1.6;
+            font-size: 1rem;
+            background: var(--background);
+        }
+
+        .section-container {
+            max-width: var(--max-width, 1000px);
+            margin: 0 auto;
+            padding: 3rem var(--padding, 1rem);
+        }
+
+        .heading {
+            font-size: 3rem;
+            line-height: 1;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .button {
+            color: white;
+            background: var(--color-accent);
+            border-radius: 5px;
+            padding: 8px 20px;
+            transition: var(--transition);
+        }
+
+        .button:hover {
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .button.inverted {
+            background: transparent;
+            color: var(--color-accent);
+            border: 2px solid var(--color-accent);
+        }
+    </style><!-- HEAD_svelte-du3lun_END -->
+    <style>
+        .section-container.svelte-1grguq5.svelte-1grguq5 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem
+        }
+
+        .logo.svelte-1grguq5.svelte-1grguq5 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.2
+        }
+
+        .desktop-nav.svelte-1grguq5.svelte-1grguq5 {
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%
+        }
+
+        .desktop-nav.svelte-1grguq5 nav.svelte-1grguq5 {
+            display: flex;
+            gap: 2rem
+        }
+
+        .desktop-nav.svelte-1grguq5 nav a.link.svelte-1grguq5 {
+            border-color: transparent;
+            transition: border-color 0.1s;
+            font-size: 0.95rem
+        }
+
+        .desktop-nav.svelte-1grguq5 nav a.link.svelte-1grguq5:hover {
+            border-color: initial
+        }
+
+        @media(min-width: 800px) {
+            .desktop-nav.svelte-1grguq5.svelte-1grguq5 {
+                display: flex
+            }
+        }
+
+        .mobile-nav.svelte-1grguq5.svelte-1grguq5 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            font-weight: 500
+        }
+
+        @media(min-width: 800px) {
+            .mobile-nav.svelte-1grguq5.svelte-1grguq5 {
+                display: none
+            }
+        }
+
+        #popup.svelte-1grguq5.svelte-1grguq5 {
+            font-size: 1.25rem;
+            display: grid;
+            gap: 1rem;
+            position: absolute;
+            text-align: center;
+            background-color: var(--background-color, white);
+            box-shadow: var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));
+            border-radius: var(--border-radius);
+            inset: 0.5rem;
+            bottom: initial;
+            padding: 2rem;
+            z-index: 1
+        }
+
+        #popup.svelte-1grguq5 button#close.svelte-1grguq5 {
+            position: absolute;
+            right: 1rem;
+            top: 1rem
+        }
+
+        .content.svelte-1sp8qf2 img {
+            width: 100%;
+            margin: 2rem 0;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius)
+        }
+
+        .content.svelte-1sp8qf2 p {
+            padding: 0.5rem 0;
+            line-height: 1.5
+        }
+
+        .content.svelte-1sp8qf2 a {
+            text-decoration: underline
+        }
+
+        .content.svelte-1sp8qf2 h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 0.5rem
+        }
+
+        .content.svelte-1sp8qf2 h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            line-height: 1.2
+        }
+
+        .content.svelte-1sp8qf2 h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-top: .5rem
+        }
+
+        .content.svelte-1sp8qf2 ul {
+            list-style: disc;
+            padding: 0.5rem 0;
+            padding-left: 1.25rem
+        }
+
+        .content.svelte-1sp8qf2 ol {
+            list-style: decimal;
+            padding: 0.5rem 0;
+            padding-left: 1.25rem
+        }
+
+        .content.svelte-1sp8qf2 blockquote {
+            padding: 2rem;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius)
+        }
+
+        .content.svelte-1sp8qf2 a {
+            color: #167FFF
+        }
+
+        .content.svelte-1sp8qf2 a:hover {
+            text-decoration: none
+        }
+
+        .section-container.svelte-1x1lvs1.svelte-1x1lvs1 {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem
+        }
+
+        @media(min-width: 600px) {
+            .section-container.svelte-1x1lvs1.svelte-1x1lvs1 {
+                flex-direction: row
+            }
+        }
+
+        nav.svelte-1x1lvs1.svelte-1x1lvs1 {
+            display: flex;
+            gap: 1rem;
+            font-size: .875rem
+        }
+
+        nav.svelte-1x1lvs1 .link.svelte-1x1lvs1 {
+            border-color: transparent
+        }
+
+        nav.svelte-1x1lvs1 .link.svelte-1x1lvs1:hover {
+            border-color: initial
+        }
+
+        .primo.svelte-1x1lvs1.svelte-1x1lvs1 {
+            font-weight: 600;
+            font-size: 0.75rem
+        }
+
+        .primo.svelte-1x1lvs1 a.svelte-1x1lvs1 {
+            text-decoration: underline
+        }
+
+        .social-links.svelte-1x1lvs1.svelte-1x1lvs1 {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 1.5rem
+        }
+
+        .social-links.svelte-1x1lvs1 a.svelte-1x1lvs1 {
+            color: #42A6F7;
+            transition: var(--transition, 0.1s transform)
+        }
+
+        .social-links.svelte-1x1lvs1 a.svelte-1x1lvs1:hover {
+            color: #167FFF;
+            transform: scale(1.1)
+        }
+    </style>
+</head>
+
+<body id="page">
+
+    <div class="section" id="section-18e0d19c">
+        <header class="section-container svelte-1grguq5">
+            <div class="desktop-nav svelte-1grguq5"><a href="/" class="logo svelte-1grguq5">Let's Write Primo Demo</a>
+                <nav class="svelte-1grguq5"><a class="link svelte-1grguq5" href="https://www.letswrite.tw">Home</a><a class="link svelte-1grguq5" href="https://www.letswrite.tw/sitemap/">所有筆記文</a><a class="link svelte-1grguq5" href="https://t.me/+Hj2RZZeT65liYTM1">Let's News</a></nav>
+            </div>
+            <div class="mobile-nav svelte-1grguq5"><a href="/" class="logo svelte-1grguq5">Let's Write Primo Demo</a>
+                <button id="open" aria-label="Open mobile navigation"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="30" height="30" viewBox="0 0 24 24" class="iconify iconify--eva"><!-- HTML_TAG_START -->
+                        <g id="iconifySvelte0">
+                            <g id="iconifySvelte1">
+                                <g id="iconifySvelte2" fill="currentColor">
+                                    <rect width="18" height="2" x="3" y="11" rx=".95" ry=".95" />
+                                    <rect width="18" height="2" x="3" y="16" rx=".95" ry=".95" />
+                                    <rect width="18" height="2" x="3" y="6" rx=".95" ry=".95" />
+                                </g>
+                            </g>
+                        </g><!-- HTML_TAG_END -->
+                    </svg></button>
+            </div>
+        </header>
+    </div>
+    <div class="section" id="section-f3378cd4">
+        <div class="section">
+            <div class="section-container content svelte-1sp8qf2"><!-- HTML_TAG_START -->
+                <h1 id="primo">本網頁使用 Primo 製作</h1>
+                <p>使用 Primo 製作網頁筆記文：</p>
+                <p><a href="https://www.letswrite.tw/primo-cms/">開源免費，在 Netlify 上安裝 Primo CMS，輕鬆製作網頁筆記</a></p>
+                <p>Enjoy :)</p><!-- HTML_TAG_END -->
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section-3150090d">
+        <footer class="section-container svelte-1x1lvs1">
+            <nav class="svelte-1x1lvs1"><a class="link svelte-1x1lvs1" href="https://www.letswrite.tw">Copyright 2023</a></nav>
+            <span class="primo svelte-1x1lvs1"><a href="https://www.letswrite.tw" class="svelte-1x1lvs1">Let&#39;s Write</a></span>
+            <div class="social-links svelte-1x1lvs1"><a href="https://t.me/letswritetw" aria-label="Telegram" class="svelte-1x1lvs1"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START -->
+                        <path d="M9.78 18.65l.28-4.23l7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3L3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z" fill="currentColor" /><!-- HTML_TAG_END -->
+                    </svg>
+                </a><a href="https://github.com/letswritetw" aria-label="GitHub" class="svelte-1x1lvs1"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START -->
+                        <path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z" /><!-- HTML_TAG_END -->
+                    </svg>
+                </a></div>
+        </footer>
+    </div>
+
+    <script type="module">
+        const path = window.location.pathname === '/' ? '' : window.location.pathname
+        const [{
+            default: App
+        }] = await Promise.all([
+            import(path + '/_module.js')
+        ]).catch(e => console.error(e))
+        new App({
+            target: document.querySelector('body'),
+            hydrate: true,
+        })
+    </script>
+</body>
+
+</html>
