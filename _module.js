@@ -3366,7 +3366,7 @@ function create_fragment$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a0, "href", "/");
+			attr(a0, "href", "https://www.letswrite.tw/primo-cms/");
 			attr(a0, "class", "logo svelte-1grguq5");
 			attr(nav, "class", "svelte-1grguq5");
 			attr(div0, "class", "desktop-nav svelte-1grguq5");
