@@ -4008,8 +4008,8 @@ function create_fragment$5(ctx) {
 	component_2 = new Component$3({
 			props: {
 				content: {
-					"html": "<h1 id=\"primo\">本網頁使用 Primo 製作</h1>\n<p>使用 Primo 製作網頁筆記文：</p>\n<p><a href=\"https://www.letswrite.tw/primo-cms/\">開源免費，在 Netlify 上安裝 Primo CMS，輕鬆製作網頁筆記</a></p>\n<p>Enjoy :)</p>",
-					"markdown": "# 本網頁使用 Primo 製作\n\n使用 Primo 製作網頁筆記文：\n\n<a href=\"https://www.letswrite.tw/primo-cms/\">開源免費，在 Netlify 上安裝 Primo CMS，輕鬆製作網頁筆記</a>\n\nEnjoy :)\n\n"
+					"html": "<h1 id=\"primo\">本網頁使用 Primo 製作</h1>\n<p>使用 Primo 製作網頁筆記文：</p>\n<p><a href=\"https://www.letswrite.tw/primo-cms/\">開源免費，在 Netlify 上安裝 Primo CMS，輕鬆製作網頁</a></p>\n<p>Enjoy :)</p>",
+					"markdown": "# 本網頁使用 Primo 製作\n\n使用 Primo 製作網頁筆記文：\n\n<a href=\"https://www.letswrite.tw/primo-cms/\">開源免費，在 Netlify 上安裝 Primo CMS，輕鬆製作網頁</a>\n\nEnjoy :)\n\n"
 				}
 			}
 		});
